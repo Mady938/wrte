@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            background-color: #f8f8f8;
+        }
+        .header a.logo {
+            display: inline-block;
+        }
+        .header a.logo img {
+            width: 150px; /* Adjust size as needed */
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+        .product-card {
+            width: 100%;
+            max-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-image {
+            width: 100%;
+            height: 180px;
+            background-color: #f4f4f4;
+        }
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .product-details {
+            padding: 15px;
+            text-align: center;
+        }
+        .product-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .product-subtitle {
+            color: #888;
+            margin: 5px 0;
+        }
+        .product-price {
+            font-size: 24px;
+            color: #28a745;
+            margin: 10px 0;
+        }
+        .product-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            border-top: 1px solid #ddd;
+        }
+        .buy-btn {
+            color: #007bff;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .sales, .rating {
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <a href="https://appxnow.in" class="logo">
+        <img src="https://appxnow.in/_next/static/media/appxlogo.png" alt="Logo"> <!-- Replace 'logo.png' with the actual path to your logo image -->
+    </a>
+</div>
+
+<div class="product-grid">
+    <!-- Product Card 1 -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="../products/images/eclassy.webp" alt="Product 1">
+        </div>
+        <div class="product-details">
+            <div class="product-title">eClassify</div>
+            <div class="product-subtitle">Classified Buy and Sell Marketplace</div>
+            <div class="product-price">$59</div>
+        </div>
+        <div class="product-footer">
+            <span class="sales">288 Sales</span>
+            <span class="rating">★★★★☆</span>
+            <a href="https://wa.me/916384304986" class="buy-btn" target="_blank">Buy</a>
+        </div>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="../products/images/eschoolsaas.webp" alt="Product 2">
+        </div>
+        <div class="product-details">
+            <div class="product-title">eSchool SaaS</div>
+            <div class="product-subtitle">School Management System</div>
+            <div class="product-price">$99</div>
+        </div>
+        <div class="product-footer">
+            <span class="sales">324 Sales</span>
+            <span class="rating">★★★★★</span>
+            <a href="https://wa.me/916384304986" class="buy-btn" target="_blank">Buy</a>
+        </div>
+    </div>
+
+    <!-- Product Card 3 -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="../products/images/elitequiz.webp" alt="Product 3">
+        </div>
+        <div class="product-details">
+            <div class="product-title">Elite Quiz App</div>
+            <div class="product-subtitle">Trivia Quiz Game - Flutter</div>
+            <div class="product-price">$69</div>
+        </div>
+        <div class="product-footer">
+            <span class="sales">1734 Sales</span>
+            <span class="rating">★★★★☆</span>
+            <a href="https://wa.me/916384304986" class="buy-btn" target="_blank">Buy</a>
+        </div>
+    </div>
+
+    <!-- Product Card 4 -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="../products/images/ebroker.webp" alt="Product 4">
+        </div>
+        <div class="product-details">
+            <div class="product-title">eBroker</div>
+            <div class="product-subtitle">Real Estate Property Solution</div>
+            <div class="product-price">$69</div>
+        </div>
+        <div class="product-footer">
+            <span class="sales">567 Sales</span>
+            <span class="rating">★★★★☆</span>
+            <a href="https://wa.me/916384304986" class="buy-btn" target="_blank">Buy</a>
+        </div>
+    </div>
+
+    <!-- Product Card 5 -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="../products/images/elitequiz.webp" alt="Product 5">
+        </div>
+        <div class="product-details">
+            <div class="product-title">Elite Quiz Web</div>
+            <div class="product-subtitle">Trivia Quiz Website</div>
+            <div class="product-price">$39</div>
+        </div>
+        <div class="product-footer">
+            <span class="sales">733 Sales</span>
+            <span class="rating">★★★★☆</span>
+            <a href="https://wa.me/916384304986" class="buy-btn" target="_blank">Buy</a>
+        </div>
+    </div>
+
+    <!-- Product Card 6 -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="../products/images/newsapp.webp" alt="Product 6">
+        </div>
+        <div class="product-details">
+            <div class="product-title">News App and Web</div>
+            <div class="product-subtitle">Build Your Own News Platform</div>
+            <div class="product-price">$59</div>
+        </div>
+        <div class="product-footer">
+            <span class="sales">826 Sales</span>
+            <span class="rating">★★★★☆</span>
+            <a href="https://wa.me/916384304986" class="buy-btn" target="_blank">Buy</a>
+        </div>
+    </div>
+
+    <!-- Product Card 7 -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="../products/images/edemand.webp" alt="Product 7">
+        </div>
+        <div class="product-details">
+            <div class="product-title">eDemand Multi Vendor</div>
+            <div class="product-subtitle">Service Booking Solution</div>
+            <div class="product-price">$69</div>
+        </div>
+        <div class="product-footer">
+            <span class="sales">390 Sales</span>
+            <span class="rating">★★★★☆</span>
+            <a href="https://wa.me/916384304986" class="buy-btn" target="_blank">Buy</a>
+        </div>
+    </div>
+
+    <!-- Product Card 8 -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="../products/images/erestro.webp" alt="Product 8">
+        </div>
+        <div class="product-details">
+            <div class="product-title">eRestro Single Vendor</div>
+            <div class="product-subtitle">Restaurant Delivery Solution</div>
+            <div class="product-price">$59</div>
+        </div>
+        <div class="product-footer">
+            <span class="sales">130 Sales</span>
+            <span class="rating">★★★★★</span>
+            <a href="https://wa.me/916384304986" class="buy-btn" target="_blank">Buy</a>
+        </div>
+    </div>
+
+    <!-- Product Card 9 -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="../products/images/social.webp" alt="Product 9">
+        </div>
+        <div class="product-details">
+            <div class="product-title">Social Media App</div>
+            <div class="product-subtitle">Connect and Share</div>
+            <div class="product-price">$49</div>
+        </div>
+        <div class="product-footer">
+            <span class="sales">90 Sales</span>
+            <span class="rating">★★★★☆</span>
+            <a href="https://wa.me/916384304986" class="buy-btn" target="_blank">Buy</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
